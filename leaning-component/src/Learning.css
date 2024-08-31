@@ -1,0 +1,132 @@
+/* src/Learning.css */
+.learning-container {
+  text-align: center;
+  padding: 20px;
+  background: url(./learningbackground.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Ensure container takes full height of viewport */
+  border: 4px solid #000000;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #000000;
+  padding: 1% 0;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 25px;
+  margin: 0 0 20px 0; /* Add margin below paragraphs */
+  color: #333;
+  padding: 1% 0;
+}
+
+.options1 {
+  display: flex;
+  align-items: left; /* Center items vertically */
+  justify-content: left; /* Center items horizontally */
+  gap: 20px; /* Space between each option */
+  padding: 0 60% 2% 5%; /* Adjust padding for better centering */
+}
+
+.options2{
+  display: flex;
+  align-items: right; /* Center items vertically */
+  justify-content: right; /* Center items horizontally */
+  gap: 20px; /* Space between each option */
+  padding: 0 5% 2% 30%; /* Adjust padding for better centering */
+}
+
+.options3{
+  display: flex;
+  align-items: left; /* Center items vertically */
+  justify-content: left; /* Center items horizontally */
+  gap: 20px; /* Space between each option */
+  padding: 0 60% 2% 5%; /* Adjust padding for better centering */
+}
+
+.options4{
+  display: flex;
+  align-items: right; /* Center items vertically */
+  justify-content: right; /* Center items horizontally */
+  gap: 20px; /* Space between each option */
+  padding: 0 5% 2% 30%; /* Adjust padding for better centering */
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option h2 {
+  margin: 10px;
+  font-size: 22px;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .option {
+    width: 180px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .option {
+    width: 160px;
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .option {
+    width: 140px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p, h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .option {
+    width: 120px;
+    font-size: 12px;
+    padding: 8px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  p, h2 {
+    font-size: 18px;
+  }
+}

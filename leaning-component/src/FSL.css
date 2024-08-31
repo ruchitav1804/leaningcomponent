@@ -1,0 +1,100 @@
+/* Default styling */
+.fsl-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #fae0e3, #fbb9f1);
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .numbers-section {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+  }
+  
+  .bordered-heading {
+    border: 4px solid #000000; /* Border color and thickness */
+    margin: 2px 0; /* Space around the heading */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    text-decoration: underline;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  h2{
+    font-size: 30px;
+  }
+  
+  .alphabets-section {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  .grid-container {
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items:center;
+    gap: 5px;
+    padding: 20px 0 0 0;
+    width: 100%;
+    grid-column: span;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
+  .box-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .box-label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(5, 1fr); /* Adjust for tablets and smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr); /* Adjust for smaller tablets and large phones */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Adjust for mobile phones */
+    }
+    .box {
+      height: 80px; /* Adjust box size for mobile */
+      width: 80px;
+    }
+  }
+  
